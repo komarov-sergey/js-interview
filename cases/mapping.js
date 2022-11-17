@@ -25,17 +25,16 @@ const bulkConfig = [
 ];
 
 function mapping(loc, bulkConfig) {
-  let buffArr = [];
-  loc.forEach((elem, locIndx) => {
-    elem.location_key.forEach((locElem) => {
-      buffArr.push({
+  return loc.reduce((prev, curr, locIndx) => {
+    return [
+      ...prev,
+      ...curr.location_key.map((locElem) => ({
         config_key: bulkConfig[locIndx].dataValues.config_key,
         location_key: locElem,
-        autoassign: elem.autoassign,
-      });
-    });
-  });
-  return buffArr;
+        autoassign: curr.autoassign,
+      })),
+    ];
+  }, []);
 }
 
 module.exports = {
