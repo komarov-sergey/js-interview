@@ -1,4 +1,4 @@
-const titleCase = require("../convertToTitleCase");
+const titleCase = require("../cases/convertToTitleCase");
 
 test("converts string to title case", () => {
   expect(titleCase(" SOME stRRring ")).toBe("Some Strrring");
