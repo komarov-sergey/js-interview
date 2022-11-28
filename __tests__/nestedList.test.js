@@ -1,4 +1,4 @@
-const { flatList, transform } = require("../cases/nestedList");
+const { flatList, transform } = require("../src/nestedList");
 const util = require("node:util");
 
 test("transform flat to nasted list", () => {

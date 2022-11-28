@@ -1,4 +1,4 @@
-const { backendErrors, mapper } = require("../cases/validationMsg");
+const { backendErrors, mapper } = require("../src/validationMsg");
 
 test("validate BE error messages", () => {
   let output = [

@@ -1,4 +1,4 @@
-const convertTo24HrsFormat = require("../cases/convertTime12to24");
+const convertTo24HrsFormat = require("../src/convertTime12to24");
 
 test("converts time to 24 format", () => {
   expect(convertTo24HrsFormat("12:10AM")).toBe("00:10");

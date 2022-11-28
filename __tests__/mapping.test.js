@@ -1,4 +1,4 @@
-const { mapping, loc, bulkConfig } = require("../cases/mapping");
+const { mapping, loc, bulkConfig } = require("../src/mapping");
 
 test("mapping 2 arrays", () => {
   let output = [
