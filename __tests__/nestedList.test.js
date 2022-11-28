@@ -26,13 +26,5 @@ test("transform flat to nasted list", () => {
     },
   ];
 
-  console.log(
-    util.inspect(transform(flatList), {
-      showHidden: false,
-      depth: null,
-      colors: true,
-    })
-  );
-
   expect(transform(flatList)).toEqual(output);
 });

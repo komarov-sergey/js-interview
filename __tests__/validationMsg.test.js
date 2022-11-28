@@ -7,7 +7,5 @@ test("validate BE error messages", () => {
     "passwordConfirmation: Must match with password",
   ];
 
-  console.log(mapper(backendErrors));
-
   expect(mapper(backendErrors)).toEqual(output);
 });
