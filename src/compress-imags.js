@@ -19,11 +19,11 @@ const tree = mkdir("my documents", [
 function compressImages(tree) {
   const newTree = _.cloneDeep(tree);
   const isImg = ({ name }) => name.includes(".jpg");
-  let getImgs = getChildren(newTree).filter(isFile).filter(isImg);
-
-  getImgs.forEach((elem) => {
+  const divideByTwo = (elem) => {
     getMeta(elem).size /= 2;
-  });
+  };
+
+  getChildren(newTree).filter(isFile).filter(isImg).forEach(divideByTwo);
 
   return newTree;
 }
