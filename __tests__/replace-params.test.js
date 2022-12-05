@@ -1,4 +1,4 @@
-const { initialUrl, replaceParamsInUrl } = require("../src/replaceParams");
+const { initialUrl, replaceParamsInUrl } = require("../src/replace-params");
 
 test("replace params in url", () => {
   let outputUrl = "/posts/1/comments/3";

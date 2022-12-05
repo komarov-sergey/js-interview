@@ -5,7 +5,7 @@ const {
   getMeta,
   getName,
   isFile,
-} = require("./lib/virtualFS");
+} = require("../lib/virtualFS");
 const _ = require("lodash");
 
 function compressImages(tree) {

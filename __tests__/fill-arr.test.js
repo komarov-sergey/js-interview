@@ -1,4 +1,4 @@
-const { fill } = require("../src/fillArr");
+const { fill } = require("../src/fill-arr");
 
 let array = [];
 

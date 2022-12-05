@@ -1,4 +1,4 @@
-const { mkdir, mkfile } = require("./lib/virtualFS");
+const { mkdir, mkfile } = require("../lib/virtualFS");
 
 // nodejs - package # директория(метаданные: { hidden: true })
 // ├── Makefile # файл
